@@ -15,11 +15,11 @@ export const GridRow = styled.div<{ size?: number | string }>`
   gap: 5px;
 `;
 
-export const GridColumn = styled.div<{ size?: number | string }>`
+export const GridColumn = styled.div<{ size?: any }>`
   display: grid;
   grid-template-rows: repeat(
     auto-fit,
-    minmax(0, ${(props) => (props.size ? `${props.size}px` : '1fr')})
+    ${(props) => (props.size ? props.size.map((i: number) => `${i}px `) : '1fr')}
   );
   gap: 5px;
   background-color: aqua;
@@ -28,6 +28,7 @@ export const GridColumn = styled.div<{ size?: number | string }>`
 
 export const GridItem = styled.div<{ size?: number | string }>`
   display: grid;
+  grid-auto-rows: repeat(5, 50px);
   background-color: green;
   padding: 5px;
 `;

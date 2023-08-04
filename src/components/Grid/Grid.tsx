@@ -6,15 +6,15 @@ const Grid = () => {
   return (
     <GridWrapper>
       <GridRow>
-        <GridItem size={200}>
-          <GridColumn size={200}>
-            <GridItem size={80}></GridItem>
-            <GridItem size={50}></GridItem>
-            <GridItem size={50}></GridItem>
+        <GridItem>
+          <GridColumn size={[50, 20, 80]}>
+            <GridItem></GridItem>
+            <GridItem></GridItem>
+            <GridItem></GridItem>
           </GridColumn>
         </GridItem>
         <GridItem size={100}>
-          <GridColumn size={100}>
+          <GridColumn>
             <GridItem size={50}></GridItem>
             <GridItem size={50}></GridItem>
           </GridColumn>
