@@ -6,23 +6,21 @@ const Grid = () => {
   return (
     <GridWrapper>
       <GridRow>
-        <GridItem size={500}>
-          <GridColumn>
-            <GridItem size={200}></GridItem>
+        <GridItem size={200}>
+          <GridColumn size={200}>
+            <GridItem size={80}></GridItem>
             <GridItem size={50}></GridItem>
-            <GridItem size={200}></GridItem>
+            <GridItem size={50}></GridItem>
           </GridColumn>
         </GridItem>
-        <GridItem size={300}>
-          <GridColumn>
-            <GridItem size={200}></GridItem>
+        <GridItem size={100}>
+          <GridColumn size={100}>
+            <GridItem size={50}></GridItem>
+            <GridItem size={50}></GridItem>
           </GridColumn>
         </GridItem>
       </GridRow>
-      <GridRow>
-        <GridItem size={40}></GridItem>
-        <GridItem size={40}></GridItem>
-      </GridRow>
+      <GridRow></GridRow>
     </GridWrapper>
   );
 };
