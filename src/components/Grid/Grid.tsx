@@ -5,22 +5,34 @@ const Grid = () => {
   // это parent
   return (
     <GridWrapper>
-      <GridRow>
+      <GridRow size={['*', 350]}>
         <GridItem>
-          <GridColumn size={[50, 20, 80]}>
-            <GridItem></GridItem>
-            <GridItem></GridItem>
-            <GridItem></GridItem>
+          <GridColumn size={[170, '3*', '1*', 300]}>
+            <GridItem>
+              11111111Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore
+              reiciendisLorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore
+              reiciendisLorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore
+            </GridItem>
+            <GridItem>
+              11111111Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore
+              reiciendisLorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore
+              reiciendisLorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore
+              11111111Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore
+              reiciendisLorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore
+              reiciendisLorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores labore reiciendis
+            </GridItem>
+            <GridItem>egerg</GridItem>
+            <GridItem>egerg</GridItem>
           </GridColumn>
         </GridItem>
-        <GridItem size={100}>
+        <GridItem>
           <GridColumn>
-            <GridItem size={50}></GridItem>
-            <GridItem size={50}></GridItem>
+            <GridItem></GridItem>
+            <GridItem></GridItem>
           </GridColumn>
         </GridItem>
       </GridRow>
-      <GridRow></GridRow>
     </GridWrapper>
   );
 };
