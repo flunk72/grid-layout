@@ -1,16 +1,13 @@
 import { Styles } from './styles.styled';
 import { Layout } from './App.styled';
-import Grid from './components/Grid/Grid';
-import { useState } from 'react';
+import Grid from './containers/Grid';
 
 function App() {
   return (
-    <div>
-      <Layout>
-        <Grid />
-        <Styles />
-      </Layout>
-    </div>
+    <Layout>
+      <Grid />
+      <Styles />
+    </Layout>
   );
 }
 
