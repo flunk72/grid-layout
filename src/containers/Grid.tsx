@@ -10,14 +10,14 @@ const Grid = () => {
         <GridItem size={500}>
           <GridColumn>
             <GridItem size={500}></GridItem>
-            <GridItem size={100}></GridItem>
+            <GridItem size={'1*'}></GridItem>
           </GridColumn>
         </GridItem>
         <GridItem size={'2*'}>
           <GridColumn>
             <GridItem size={500}></GridItem>
-            <GridItem size={50}></GridItem>
-            <GridItem size={80}></GridItem>
+            <GridItem size={'1*'}></GridItem>
+            <GridItem size={'4*'}></GridItem>
           </GridColumn>
         </GridItem>
         <GridItem size={'1*'}>
@@ -35,10 +35,10 @@ const Grid = () => {
             <GridItem size={100}></GridItem>
           </GridColumn>
         </GridItem>
-        <GridItem size={200}>
+        <GridItem size={'1*'}>
           <GridColumn>
-            <GridItem size={200}></GridItem>
-            <GridItem size={50}></GridItem>
+            <GridItem size={'1*'}></GridItem>
+            <GridItem size={'4*'}></GridItem>
           </GridColumn>
         </GridItem>
       </GridRow>

@@ -1,4 +1,3 @@
-import React from 'react';
 import { GridColumnProps } from './GridColumn.props';
 import { GridStyledColumn } from './GridColumn.styled';
 
