@@ -1,12 +1,12 @@
-import React, { useContext } from 'react';
 import { GridRowProps } from './GridRow.props';
 import { GridStyledRow } from './GridRow.styled';
-import { GridItemContext } from '../GridContext/GridContext';
 
-const GridRow = ({ children }: GridRowProps) => {
-  const { items } = useContext<any>(GridItemContext);
-  console.log('items', items);
-  return <GridStyledRow size={items}>{children}</GridStyledRow>;
+const GridRow = ({ children }: GridRowProps): JSX.Element => {
+  const childrenArray = Array.isArray(children) ? children : [children];
+
+  const sizeGridRowItems = childrenArray.map((i) => i?.props.size);
+
+  return <GridStyledRow size={sizeGridRowItems}>{children}</GridStyledRow>;
 };
 
 export default GridRow;

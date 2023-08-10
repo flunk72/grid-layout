@@ -1,6 +1,4 @@
-import { ReactNode } from 'react';
-
 export interface GridItemProps {
-  children?: ReactNode;
+  children?: JSX.Element | JSX.Element[];
   size: number | string;
 }
