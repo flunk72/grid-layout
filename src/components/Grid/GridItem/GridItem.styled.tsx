@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const GridStyledItem = styled.div<{ size?: number | string }>`
-  display: grid;
+export const GridStyledItem = styled.div<{ size?: number | string; color?: string }>`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow-y: hidden;
   overflow-x: hidden;
-  background-color: green;
-  padding: 5px;
+  background-color: ${(props) => props.color};
 `;
